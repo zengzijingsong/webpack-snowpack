@@ -1,0 +1,16 @@
+{
+  "name": "webpack-snowpack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:zengzijingsong/webpack-snowpack.git",
+  "author": "jingsong.zeng <jingsong.zeng@advance.ai>",
+  "scripts": {
+    "serve": "webpack"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "snowpack": "^2.13.3",
+    "webpack": "^5.0.0-rc.4",
+    "webpack-cli": "^3.3.12"
+  }
+}
