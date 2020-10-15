@@ -1,16 +1,31 @@
 {
-  "name": "webpack-snowpack",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "git@github.com:zengzijingsong/webpack-snowpack.git",
-  "author": "jingsong.zeng <jingsong.zeng@advance.ai>",
   "scripts": {
-    "serve": "webpack"
+    "start": "snowpack dev",
+    "build": "snowpack build",
+    "test": "jest",
+    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
+    "lint": "prettier --check \"src/**/*.{js,jsx,ts,tsx}\""
   },
-  "license": "MIT",
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
   "devDependencies": {
-    "snowpack": "^2.13.3",
-    "webpack": "^5.0.0-rc.4",
-    "webpack-cli": "^3.3.12"
+    "@babel/preset-react": "^7.10.4",
+    "@babel/preset-typescript": "^7.10.4",
+    "@snowpack/app-scripts-react": "^1.12.3",
+    "@snowpack/plugin-dotenv": "^2.0.3",
+    "@snowpack/plugin-react-refresh": "^2.3.2",
+    "@snowpack/plugin-typescript": "^1.0.1",
+    "@testing-library/jest-dom": "^5.5.0",
+    "@testing-library/react": "^11.0.0",
+    "@types/react": "^16.9.49",
+    "@types/react-dom": "^16.9.8",
+    "@types/snowpack-env": "^2.3.0",
+    "jest": "^26.2.2",
+    "prettier": "^2.0.5",
+    "snowpack": "^2.14.0",
+    "snowpack-plugin-svgr": "^0.1.2",
+    "typescript": "^4.0.0"
   }
 }
